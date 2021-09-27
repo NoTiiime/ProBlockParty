@@ -1,0 +1,17 @@
+########################################################
+#                                                      #
+#               PRO BLOCK PARTY                        #
+#                                                      #
+#             CREATED BY: NOTIIIME                     #
+#                                                      #
+########################################################
+
+#How much points should the player starts with.
+default_points: 100
+
+#MySQL login information
+host: localhost
+port: 3306
+database: BlockParty
+username: root
+password: ''

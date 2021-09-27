@@ -1,0 +1,56 @@
+########################################################
+#                                                      #
+#               PRO BLOCK PARTY                        #
+#                                                      #
+#             CREATED BY: NOTIIIME                     #
+#                                                      #
+########################################################
+Prefix: "&e&lPRO &e&lBlock&5&lParty &7➜"
+onJoinMessage: "<prefix> &e<name> &bhas joined the server!"
+onGameStartMessage: "<prefix> &cThe game has started right now!"
+
+#Commands Permissions:
+# /game -> blockparty.cmd.game - /floor -> blockparty.cmd.floors - /bound -> blockparty.cmd.boundaries
+Game:
+  permission: "<prefix> &cYou don't have permission."
+  help:
+    - "<prefix> Here are the command list!"
+    - "&c/game setmin <int> &7it must be at least 2, and it can not be higher than maximum!"
+    - "&c/game setmax <int> &7The range of this value is optional, and it can not be lower than minimum!"
+    - "&c/game set <spawn, spectate, ingame, hologram> &7the locations."
+    - "&c/game resetStats <playerName> &7Executing this command will use &eMOJANG-&aAPI &7to get THE REAL UUID of this player!, &cPLEASE DO NOT SPAM USING THIS COMMAND!."
+  stats:
+    - "<prefix> Your Statistics"
+    - "  Name: <name>"
+    - "  Points: <points>"
+    - "  Wins: <wins>"
+    - "  Loses: <loses>"
+    - "  Matches: <matches>"
+  minimum: "<prefix> &c/game setmin <int> &7it must be at least 2, and it can not be higher than maximum!"
+  maximum: "<prefix> &c/game setmax <int> &7The range of this value is optional, and it can not be lower than minimum!"
+  updated: "<prefix> &aAll have been updated successfully!"
+  set:
+    usage: "<prefix> &c/game set <spawn, spectate, ingame, holo>"
+    success: "<prefix> &aLocation &e<loc> &ahas been set successfully!"
+  events:
+    eliminated_broadcast: "<prefix> &e<name> &chas been eliminated!"
+    remaining_broadcast: "<prefix> &e<remaining> &bplayers remaining."
+    spectating_messsage: "<prefix> &c&lOops! you failed. You are now a spectator."
+    can_not_join: "<prefix> You can not join at this moment!"
+  summary:
+    - "<prefix> &4&lRESTARTING IN &e<time> &4&lSECONDS"
+    - ""
+    - "            §6§lGame Summary               "
+    - ""
+    - "&e&lWINNER: &6&l<winner>"
+    - ""
+    - "&bContributors: &a<players>"
+    - "&bSpectators: &c<spectators>"
+Floors:
+  create:
+    usage: "<prefix> &c/floor create <name> <schematic_file_name>"
+    error: "<prefix> &cCould not create floor please, missing entries!"
+    success: "<prefix> &aFloor has been created successfully!"
+  save: "<prefix> &bFloors have been saved in the config!"
+Boundaries:
+  usage: "<prefix> &c/boundaries create &7Use '&eWorldEdit&7' wand to select position 1 and position 2."

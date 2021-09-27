@@ -1,0 +1,99 @@
+########################################################
+#                                                      #
+#               PRO BLOCK PARTY                        #
+#                                                      #
+#             CREATED BY: NOTIIIME                     #
+#                                                      #
+########################################################
+
+Game:
+  #In what bungee server should we send the player after the game
+  bungee_lobby_name: "lobby"
+  #Maximum amount of players
+  maximum_players: 8
+  #Minimum amount of players!
+  minimum_players: 2
+  #How much time should the players wait to start a game
+  lobby_timer: 60
+  #How much time should we wait until the restart gets restarted! (after the game)
+  restart_timer: 10
+  #Should we use PLAYER LEVEL as timer in lobby & restart state
+  level_timer: true
+  #Prize of the winner
+  winner_points: 100
+  #Should take points from a player when we lose!?
+  lose_points: 0
+  #Play Sound when player gets eliminated
+  eliminating_sound: AMBIENCE_THUNDER
+  #These are action bars appears before and after the game!, THESE ARE COUNTINOUSLY ALIVE
+  actionbar_messages:
+    LOBBY: '&aYou are in a lobby mode'
+    HOLD: '&eYou will be teleported in few seconds'
+    RESTART: '&cThe game is over, you can leave.'
+  #Scoreboard Async Layout for each Status!
+  scoreboard_layout:
+    #Every 20 ticks = 1 second ! - DELAY MEANS WE WAIT BEFORE THE NEXT PHASE - PERIOD TIME TAKES TO FINISH THE OPERATION
+    update_delay_ticks: 2
+    update_period_ticks: 2
+    #Animation title
+    title:
+      - '&f&lBlockParty'
+      - '&f&lBloc&e&lk&5&lP&f&larty'
+      - '&f&lBlo&e&lck&5&lPa&f&lrty'
+      - '&f&lBl&e&lock&5&lPar&f&lty'
+      - '&f&lB&e&llock&5&lPart&f&ly'
+      - '&e&lBlock&5&lParty'
+      - '&f&lBlockParty'
+      - '&e&lB&f&llockPart&5&ly'
+      - '&e&lBl&f&lockPar&5&lty'
+      - '&e&lBlo&f&lckPa&5&lrty'
+      - '&e&lBloc&f&lkP&5&larty'
+      - '&e&lBlock&5&lParty'
+    GameState:
+      #SPECTATE Scoreboard <time> -> IN GAME TIMER - <alive> -> CURRENT PLAYING
+      SPECTATE:
+        scores:
+          - ' '
+          - '&c&lTime'
+          - '&7<time>'
+          - ' '
+          - '&a&lAlive'
+          - '&7<alive>'
+          - ' '
+          - www.yourserver.com
+      #SPECTATE Scoreboard <PLAYERS> -> ONLINE PLAYERS - (<points> + <loses> + <wins> + <matches> ) CURRENT STAT OF A PLAYER!
+      LOBBY:
+        scores:
+          - ' '
+          - '&6&lPlayers'
+          - '&7<players>'
+          - ' '
+          - '&b&lYour Stats'
+          - '&dPoints: &e<points>'
+          - '&dWins: &e<wins>'
+          - '&dLoses: &e<loses>'
+          - '&dMatches: &e<matches>'
+          - ' '
+          - www.yourserver.com
+      #IN GAME Scoreboard <time> -> IN GAME TIMER - <alive> -> CURRENT PLAYING - <spectators> -> CURRENT SPECTATORS
+      INGAME:
+        scores:
+          - ' '
+          - '&c&lTime'
+          - '&7<time>'
+          - ' '
+          - '&a&lAlive'
+          - '&7<alive>'
+          - ' '
+          - '&e&lSpectators'
+          - '&7<spectators>'
+          - ' '
+          - www.yourserver.com
+      #RESTART Scoreboard <winner> -> WINNER OF THE GAME
+      RESTART:
+        scores:
+          - ' '
+          - '&aWinner'
+          - '&e<winner>'
+          - ' '
+          - www.yourserver.com

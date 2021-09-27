@@ -1,0 +1,25 @@
+########################################################
+#                                                      #
+#               PRO BLOCK PARTY                        #
+#                                                      #
+#             CREATED BY: NOTIIIME                     #
+#                                                      #
+########################################################
+# Hologram displayed in the lobby to see current records!
+# <name> = player name
+# <points> = the amount that player get it from winning every round
+# <wins> = the amount that player get it from winning the game
+# <loses> = the amount that player get it from losing the game
+# <matches> = the amount that player get it from playing every game
+Holograms:
+  location: -1.5783940609398095, 10.0, 10.946860600239841, 270.25824, -3.9279778, world
+  lines:
+    - "&7====== &e&lBlock&5&lParty &7======"
+    - " "
+    - "&bName: &2<name>"
+    - "&bPoints: &2<points>"
+    - "&bWins: &2<wins>"
+    - "&bLoses: &2<loses>"
+    - "&bMatches: &2<matches>"
+    - " "
+    - "&7==== &a&lSTATISTICS &7===="
