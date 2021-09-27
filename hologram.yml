@@ -12,7 +12,6 @@
 # <loses> = the amount that player get it from losing the game
 # <matches> = the amount that player get it from playing every game
 Holograms:
-  location: -1.5783940609398095, 10.0, 10.946860600239841, 270.25824, -3.9279778, world
   lines:
     - "&7====== &e&lBlock&5&lParty &7======"
     - " "
