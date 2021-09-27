@@ -1,0 +1,13 @@
+BlockPartyJoinEvent | Important this executes every time players join to the server, this event is being called when the player gets loaded correctly in the game.
+
+BlockPartyQuitEvent | Important this executes every time players leave the server, this event is being called when the player leaves the game.
+
+GameStartEvent | this event is being called when the game starts.
+
+GameRestartEvent | this event is being called when the game ends.
+
+PlayerEliminateEvent | this event is being called whenever a player gets eliminated.
+
+PlayerWinEvent | this event is being called when a player wins a game
+
+GameMotdEvent | Controls the appears in the motd in the main event ServerListPing
